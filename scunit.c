@@ -22,7 +22,7 @@ void ScunitAddTest(char *name, ScunitFunc func) {
     func_name = name;
     print("-------------------->case:%s begin\n", func_name);
     func();
-    print("-------------------->case:%s end\n", func_name);
+    print("-------------------->case:%s end\n\n", func_name);
 }    
 
 // ScunitAssert assert
