@@ -3,7 +3,11 @@
 ## 介绍
 Scunit: Simple C Language Unit Test Framework.适合于C语言的简单测试框架。
 
-主流语言都有测试框架，在嵌入式领域特别是资源紧缺的单片机工程中没有合适的测试框架。Scunit，可以应用于嵌入式领域。
+主流语言都有测试框架，在嵌入式领域特别是资源紧缺的单片机工程中没有合适的测试框架。Scunit是一种简单的C语言测试框架，可以应用于嵌入式领域。
+
+## 开源
+- [github上的项目地址](https://github.com/jdhxyy/scunit-clang)
+- [gitee上的项目地址](https://github.com/jdhxyy/scunit-clang)
 
 ## API
 ```c
