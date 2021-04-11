@@ -1,0 +1,5 @@
+.vscode
+
+# qtcreator generated files
+/test/build*
+*.pro.user*
