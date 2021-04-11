@@ -11,6 +11,9 @@ Scunit: Simple C Language Unit Test Framework.适合于C语言的简单测试框
 
 ## API
 ```c
+// max print message len
+#define SCUNIT_PRINT_SIZE_MAX 128   
+
 typedef void (*ScunitPrintFunc)(char *format, ...);
 typedef void (*ScunitFunc)(void);
 

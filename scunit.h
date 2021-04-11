@@ -6,11 +6,14 @@
 #define SCUNIT_H
 
 #include <stdio.h>
-#include "stdbool.h"
-#include "stdint.h"
-#include "stdlib.h"
-#include "string.h"            
-#include "stdarg.h"
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>            
+#include <stdarg.h>
+
+// max print message len
+#define SCUNIT_PRINT_SIZE_MAX 128    
 
 typedef void (*ScunitPrintFunc)(char *format, ...);
 typedef void (*ScunitFunc)(void);

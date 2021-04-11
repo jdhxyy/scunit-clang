@@ -2,9 +2,7 @@
 // Unit test for C
 // Authors: jdh99 <jdh821@163.com>
 
-#include "scunit.h"
-
-#define CUNIT_PRINT_SIZE_MAX 128                      
+#include "scunit.h"                  
 
 static ScunitPrintFunc print = NULL;
 static char *func_name = NULL;
@@ -47,14 +45,14 @@ void ScunitAssertMessage(bool condition, char *tag, char *message) {
 
 // ScunitPrint print message
 void ScunitPrint(char *format, ...) {
-    static char buf[CUNIT_PRINT_SIZE_MAX];
+    static char buf[SCUNIT_PRINT_SIZE_MAX];
     
 	va_list args;
 	va_start(args, format);
     
     int length = vsnprintf(buf, sizeof(buf) - 1, format, args);
-    if (length > CUNIT_PRINT_SIZE_MAX - 1) {
-        length = CUNIT_PRINT_SIZE_MAX - 1;
+    if (length > SCUNIT_PRINT_SIZE_MAX - 1) {
+        length = SCUNIT_PRINT_SIZE_MAX - 1;
     }
     buf[length] = 0;
     
